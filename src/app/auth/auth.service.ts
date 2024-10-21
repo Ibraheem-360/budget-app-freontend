@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
     providedIn: 'root'
 })
 export class AuthService {
-    private apiUrl = 'http://localhost:9999/api/auth';  // Backend API URL
+    private apiUrl = 'https://budget-app-backend-fte2.onrender.com/api/auth';  // Backend API URL
 
     constructor(private http: HttpClient, private router: Router) { }
 

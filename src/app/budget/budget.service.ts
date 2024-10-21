@@ -7,7 +7,7 @@ import { Budget } from './budget.model';
     providedIn: 'root'
 })
 export class BudgetService {
-    private apiUrl = 'http://localhost:9999/api/budgets';
+    private apiUrl = 'https://budget-app-backend-fte2.onrender.com/api/budgets';
 
     constructor(private http: HttpClient) { }
 
