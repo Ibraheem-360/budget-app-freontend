@@ -1,0 +1,14 @@
+<h2>Add New Budget</h2>
+<form (ngSubmit)="saveBudget()">
+    <label>
+        Category:
+        <input [(ngModel)]="budget.category" name="category" required />
+    </label>
+
+    <label>
+        Monthly Limit:
+        <input [(ngModel)]="budget.monthlyLimit" type="number" name="monthlyLimit" required />
+    </label>
+
+    <button type="submit">Save Budget</button>
+</form>

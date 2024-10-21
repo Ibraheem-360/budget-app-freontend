@@ -1,0 +1,12 @@
+<div class="budget-list">
+    <h2>Your Budgets</h2>
+    <button routerLink="/add-budget">Add New Budget</button>
+
+    <ul>
+        <li *ngFor="let budget of budgets">
+            <span>{{ budget.category }} - Limit: {{ budget.monthlyLimit }}</span>
+            <button (click)="deleteBudget(budget.id!)">Delete</button>
+            <button [routerLink]="['/edit-budget', budget.id]">Edit</button>
+        </li>
+    </ul>
+</div>

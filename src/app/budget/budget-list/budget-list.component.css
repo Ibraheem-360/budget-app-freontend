@@ -1,0 +1,111 @@
+/* Styling for the budget list container */
+.budget-list {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* Title styling */
+.budget-list h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1976d2;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Add button styling */
+.budget-list button[routerLink] {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s;
+}
+
+/* Add button hover effect */
+.budget-list button[routerLink]:hover {
+    background-color: #125699;
+}
+
+/* Styling for the list */
+.budget-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Styling for each budget item */
+.budget-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Last item without border */
+.budget-list li:last-child {
+    border-bottom: none;
+}
+
+/* Budget item text styling */
+.budget-list span {
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Action buttons */
+.budget-list li button {
+    margin-left: 10px;
+    padding: 8px 12px;
+    background-color: #ff5252;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for delete button */
+.budget-list li button:hover {
+    background-color: #d32f2f;
+}
+
+/* Edit button styling */
+.budget-list li button[routerLink] {
+    background-color: #4caf50;
+}
+
+/* Hover effect for edit button */
+.budget-list li button[routerLink]:hover {
+    background-color: #388e3c;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .budget-list {
+        width: 90%;
+    }
+
+    .budget-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .budget-list li button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
